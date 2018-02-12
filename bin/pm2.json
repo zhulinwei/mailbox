@@ -1,0 +1,13 @@
+{
+  "apps" : [{
+    "name"        : "mailbox",
+    "script"      : "./app.js",
+    "watch"       : true,
+    "env": {
+      "PORT": 3000,
+      "NODE_ENV": "development",
+      "MONGODB_TEST1": "mongodb://localhost:27017/test1",
+      "MONGODB_TEST2": "mongodb://localhost:27017/test2"
+    }
+  }]
+}
