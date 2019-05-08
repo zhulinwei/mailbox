@@ -1,17 +1,15 @@
 const mail = require('./mail');
 
 const body = {
-  from: 'Level.Z<1171567018@qq.com>', 
-  to: '2545703633@qq.com', 
+  from: 'Level.Z<1171567018@qq.com>',
+  to: '2545703633@qq.com',
   subject: 'Hello',
   text: 'Hello world?',
   html: '<b>Hello world!</b>',
-  attachments: [
-    {   
-      filename: 'text.txt',
-      content: 'hello world!'
-    },
-  ],
+  attachments: [{
+    filename: 'text.txt',
+    content: 'hello world!'
+  }]
 };
 
 mail.send(body).then(data => {
